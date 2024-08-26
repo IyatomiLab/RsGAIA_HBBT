@@ -98,7 +98,7 @@ def get_gastric_fold_edge_region(p_xy: np.ndarray):
     Args:
         p_xy (np.ndarray): the probability of a gastric fold region p(x, y)
     Returns:
-        P_e
+        G_xy (np.ndarray): gastric fold edge region G(x, y)
     """
 
     # generate a random matrix of the same shape as p_xy
@@ -119,7 +119,7 @@ def get_gastric_fold_edge_region(p_xy: np.ndarray):
     return G_xy
 
 def R_sGAIA(img_path: str):
-    """Generation of enhanced gastric fold images A(x, y)by R-sGAIA
+    """Generation of enhanced gastric fold images A(x, y) by R-sGAIA
     Args:
         img_path (str): path to the gastric image
     Return:
