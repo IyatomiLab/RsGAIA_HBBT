@@ -90,7 +90,8 @@ pred_boxes = [
   [0.1325, 0.2344, 0.1427, 0.3465],
 ]
 
-hard_pred_boxes = get_hard_boundary_boxes(gt_boxes=gt_boxes, pred_boxes=pred_boxes, iou_thr=0.5)
+hard_pred_boxes = get_hard_boundary_boxes(
+        gt_boxes=gt_boxes, pred_boxes=pred_boxes, iou_thr=0.5)
 print(hard_pred_boxes)
 
 # save hard boundary boxes in YOLO format
@@ -111,7 +112,7 @@ Finally, these hard-sample labels will be used to re-train the detection model.
 ```
 @article{okamoto2024gastric,
   title   = {Practical X-ray Gastric Cancer Screening Using Refined Stochastic Data Augmentation and Hard Boundary Box Training},
-  author  = {Hideaki Okamoto and Quan Huu Cap, Takakiyo Nomura and Kazuhito Nabeshima and Jun Hashimoto and Hitoshi Iyatomi},
+  author  = {Hideaki Okamoto and Quan Huu Cap and Takakiyo Nomura and Kazuhito Nabeshima and Jun Hashimoto and Hitoshi Iyatomi},
   journal = {arXiv preprint},
   year    = {2024}
 }
